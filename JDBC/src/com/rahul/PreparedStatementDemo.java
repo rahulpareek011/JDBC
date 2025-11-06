@@ -29,13 +29,13 @@ public class PreparedStatementDemo {
 	    
 	    int eu = preparedStatement.executeUpdate();
 	    System.out.println(eu);
-//	    while (rs.next()) {
-//            System.out.println(
-//                "ID: " + rs.getInt("id") + 
-//                ", Name: " + rs.getString("name") + 
-//                ", Marks: " + rs.getInt("age")
-//            );
-//        }
+	    while (rs.next()) {
+            System.out.println(
+                "ID: " + rs.getInt("id") + 
+                ", Name: " + rs.getString("name") + 
+                ", Marks: " + rs.getInt("age")
+            );
+        }
 	    
 	    
 	}
