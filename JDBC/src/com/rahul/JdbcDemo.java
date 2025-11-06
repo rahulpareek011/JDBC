@@ -8,8 +8,8 @@ import java.sql.Statement;
 public class JdbcDemo {
 	//DBURL
 	private static final String DBURL = "jdbc:mysql://localhost:3306/demo";
-	private static final String DBUSERNAME = "demo_user";
-	private static final String DBPASS = "demo_pass";
+	private static final String DBUSERNAME = "user_name";
+	private static final String DBPASS = "your_Password";
 	
 	//creating query 
 	private static final String INSERTDATA="SELECT * FROM student";
