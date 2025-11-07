@@ -5,14 +5,32 @@ import java.sql.ResultSet;
 import java.sql.Connection;
 import java.sql.Statement;
 
+/*
+DriverManager-		Manages the list of database drivers. It’s used to get a connection.
+Connection	-		Represents an active connection between Java and the database.
+Statement	-		Used to send SQL queries to the database.
+ResultSet	-		Used to store and process data returned from a SELECT query.
+*/
+
 public class JdbcDemo {
 	//DBURL
 	private static final String DBURL = "jdbc:mysql://localhost:3306/demo";
-	private static final String DBUSERNAME = "demo_user";
-	private static final String DBPASS = "demo_pass";
+	private static final String DBUSERNAME = "user_name";
+	private static final String DBPASS = "your_Password";
+	/*
+	DBURL	-	Connection path for your database. Follows format: jdbc:mysql://<host>:<port>/<database>
+	DBUSERNAME-	MySQL user name
+	DBPASS	-	MySQL user’s password
+
+	Prefix jdbc:mysql:// tells Java to use the MySQL JDBC driver.
+	localhost means the database is on your own computer.
+	3306 is the default MySQL port.
+	*/
 	
 	//creating query 
 	private static final String INSERTDATA="SELECT * FROM student";
+	//This holds your SQL command as a String.
+	//You could easily change it to another query like INSERT, UPDATE, or DELETE.
 	
     public static void main(String[] args) throws Exception{
     	//step 01 - load the driver(sitting on any package that sometimes causes class not found exception)
