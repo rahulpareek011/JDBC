@@ -40,10 +40,10 @@ public class JdbcSession10 {
 		System.out.println("Employee Salary: "+cs.getFloat(2));
 		
 		cs.setString(1,"Rahul");
-		cs.registerOutParameter(2, Types.FLOAT);
+		cs.registerOutParameter(2, Types.FLOAT);//getting value from database of Float type
 		
 		cs.execute();
-		System.out.println("Employee Salary: "+cs.getFloat(2));
+		System.out.println("Employee Salary: "+cs.getFloat(2));//now printing the value that we got
 		con.close();
 		
 		
