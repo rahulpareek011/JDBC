@@ -45,6 +45,11 @@ public class JdbcSession10 {
 		cs.execute();
 		System.out.println("Employee Salary: "+cs.getFloat(2));
 		con.close();
+		
+		
+		//Task 2 - 
+		
+		
 	}
 
 }
